@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class BigBoid : MonoBehaviour
 {
+    public Boid boid;
+    public BigBoid bigboid;
 
+
+    public bool finished = false;
     public Vector3 velocity;
     public float speed;
     public Vector3 acceleration;
@@ -99,6 +103,9 @@ public class BigBoid : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        bigboid.GetComponent<BigBoid>();
+        boid.GetComponent<Boid>();
+
         if (offsetPursueEnabled)
         {
             offset = transform.position - leader.transform.position;
@@ -106,28 +113,19 @@ public class BigBoid : MonoBehaviour
         }
     }
 
-    public Vector3 PlayerSteering()
-    {
-        Vector3 force = Vector3.zero;
-        force += Input.GetAxis("Vertical") * transform.forward * steeringForce;
-
-        Vector3 projected = transform.right;
-        projected.y = 0;
-        projected.Normalize();
-
-        force += Input.GetAxis("Horizontal") * projected * steeringForce;
-
-        // Put your code here!
-        return force;
-    }
 
     public Vector3 PathFollow()
     {
         Vector3 nextWaypoint = path.Next();
+        path.isLooped = false;
         if (!path.isLooped && path.IsLast())
         {
+            finished = true;
+            pathFollowingEnabled = false;
+            
             return Arrive(nextWaypoint);
         }
+
         else
         {
             if (Vector3.Distance(transform.position, nextWaypoint) < waypointDistance)
@@ -150,7 +148,7 @@ public class BigBoid : MonoBehaviour
     {
         Vector3 toTarget = target - transform.position;
         float dist = toTarget.magnitude;
-        if (dist == 0.0f)
+        if (dist < 0.5f)
         {
             return Vector3.zero;
         }
@@ -186,10 +184,6 @@ public class BigBoid : MonoBehaviour
             f += PathFollow();
         }
 
-        if (playerSteeringEnabled)
-        {
-            f += PlayerSteering();
-        }
 
         if (pursueEnabled)
         {
@@ -222,6 +216,11 @@ public class BigBoid : MonoBehaviour
 
             // Remove 10% of the velocity every second
             velocity -= (damping * velocity * Time.deltaTime);
+        }
+        if(finished == true)
+        {
+           bigboid.enabled = false;
+           boid.enabled = true;
         }
     }
 }
