@@ -34,8 +34,8 @@ public class Activator : MonoBehaviour
             pursue.enabled = true;
             obs.enabled = true;
             noise.enabled = true;
-            con.enabled = true;
-            big.enabled = false;
+            //con.enabled = true;
+            //big.enabled = false;
         }
         
     }

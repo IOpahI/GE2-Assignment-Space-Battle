@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pursue : SteeringBehaviour
 {
     public Boid target;
-
+    public Transform targetShip;
     Vector3 targetPos;
 
     public void Start()
@@ -31,4 +31,6 @@ public class Pursue : SteeringBehaviour
 
         return boid.SeekForce(targetPos);
     }
+
+
 }

@@ -6,7 +6,7 @@ public class BigBoid : MonoBehaviour
 {
     public Boid boid;
     public BigBoid bigboid;
-
+    public multiCam multicam;
 
     public bool finished = false;
     public Vector3 velocity;
@@ -120,11 +120,12 @@ public class BigBoid : MonoBehaviour
         path.isLooped = false;
         if (!path.isLooped && path.IsLast())
         {
-            finished = true;
+            
             pathFollowingEnabled = false;
             
             return Arrive(nextWaypoint);
         }
+
 
         else
         {
@@ -217,10 +218,23 @@ public class BigBoid : MonoBehaviour
             // Remove 10% of the velocity every second
             velocity -= (damping * velocity * Time.deltaTime);
         }
-        if(finished == true)
+        if (path.current > 4)
         {
-           bigboid.enabled = false;
-           boid.enabled = true;
+            
+            finished = true;
         }
+        if(path.current == 4)
+        {
+            multicam.ShowFirstPersonView();
+        }
+        if(path.current == 5)
+        {
+            multicam.ShowOverheadView();
+        }
+        if(path.current > 5 && path.current < 4)
+        {
+            multicam.NormalCam();
+        }
+        
     }
 }
