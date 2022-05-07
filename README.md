@@ -32,4 +32,4 @@ Visual Aspects
 | Spaceships | Taken from [Source](https://assetstore.unity.com/packages/3d/vehicles/space/star-sparrow-modular-spaceship-73167) |
 | Starfighter | Taken from [Source](https://assetstore.unity.com/packages/3d/vehicles/space/free-sf-fighter-11711) |
 | SkyBox | Taken from [Source](https://tools.wwwtyro.net/space-3d/index.html) |
-| Spaceships | Taken from [Source](https://assetstore.unity.com/packages/vfx/particles/fire-explosions/fx-explosion-pack-30102) |
+| Explosions| Taken from [Source](https://assetstore.unity.com/packages/vfx/particles/fire-explosions/fx-explosion-pack-30102) |
