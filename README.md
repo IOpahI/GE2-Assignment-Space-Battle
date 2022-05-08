@@ -19,7 +19,7 @@ The idea for this project is to create a representation of an iconic sci-fi spac
 # Events Summary
 1. Camera sees the line of enemy ships behind the Gunstar
 2. Camera pans towards the Gunstar
-4. Gunstar flies around and then through the enmy ships´ linfe
+4. Gunstar flies around and then through the enemy ships´ linfe
 5. Enemy ships starts chasing the Gunstar
 6. Ships collide, explosions happen
 7. The Gunstar stops moving and starts spinning, eliminating all enemy ships within its reach
