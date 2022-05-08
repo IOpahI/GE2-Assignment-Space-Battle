@@ -13,8 +13,35 @@ The idea for this project is to create a representation of an iconic sci-fi spac
 [Watch the Scene here](https://www.youtube.com/watch?v=0YXobQ9Gi10)
 
 [Watch the Game View here](https://youtu.be/s2zSrLDZk7c)
+
 [Watch the Scene View here](https://youtu.be/yGi91oJxwf0)
 
+# Events Summary
+1. Camera sees the line of enemy ships behind the Gunstar
+2. Camera pans towards the Gunstar
+4. Gunstar flies around and then through the enmy ships´ linfe
+5. Enemy ships starts chasing the Gunstar
+6. Ships collide, explosions happen
+7. The Gunstar stops moving and starts spinning, eliminating all enemy ships within its reach
+
+# How it works
+## Sequence
+- The cameras are timed according to the waypoints the Gunstar uses to follow its path
+- There is different cameras in the scene to show off the same angles shown in the original scene
+- Gunstar follows a path, which at a certain point activates the enemy ships, which are autonomous agents, that will avoid obstacles and pursue the Gunstar
+- Enemy ships will explode if they collide, as well as when the Gunstar starts spinning
+
+## Behaviours
+- ***Obstacle Avoidance***: Avoids game objects with a specific layer mask
+- ***Constrain***: Keeps the Gunstar inside a set radius so it doesn't drift off
+- ***Noise Wander***: Allows ships to wander within the worldspace
+- ***Pursue***: Sets a target for the enemy ships to move towards
+
+## Design
+- Particle systems
+  - Explosion plays when an enemy ship is destroyed. 
+
+- Skybox uses space textures
 
 Visual Aspects
 
@@ -25,11 +52,6 @@ Visual Aspects
 
 
 # List of classes/assets with sources
-
-| Class | Source |
-|-----------|-----------|
-
-
 
 | Asset | Source |
 |-----------|-----------|
