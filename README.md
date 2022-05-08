@@ -12,6 +12,10 @@ The idea for this project is to create a representation of an iconic sci-fi spac
 
 [Watch the Scene here](https://www.youtube.com/watch?v=0YXobQ9Gi10)
 
+[Watch the Game View here](https://youtu.be/s2zSrLDZk7c)
+[Watch the Scene View here](https://youtu.be/yGi91oJxwf0)
+
+
 Visual Aspects
 
 - AI Flocking and pathfinding
