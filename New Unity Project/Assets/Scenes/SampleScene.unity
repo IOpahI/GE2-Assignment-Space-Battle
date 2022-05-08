@@ -1073,6 +1073,7 @@ MonoBehaviour:
   boid: {fileID: 33892154263734603}
   bigboid: {fileID: 936779305}
   multicam: {fileID: 33892154263734604}
+  spun: 0
   finished: 0
   velocity: {x: 0, y: 0, z: 0}
   speed: 0
@@ -2638,7 +2639,9 @@ GameObject:
   - component: {fileID: 936779305}
   - component: {fileID: 33892154263734603}
   - component: {fileID: 33892154263734604}
+  - component: {fileID: 33892154263734606}
   - component: {fileID: 33892154263734605}
+  - component: {fileID: 33892154263734607}
   m_Layer: 0
   m_Name: SF_Free-Fighter
   m_TagString: Player
@@ -2912,6 +2915,132 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152353935805312}
   m_Enabled: 1
+--- !u!114 &33892154263734606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152353935805312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbea55712cc43543aa860008daad8d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bb: {fileID: 936779305}
+  ads: {fileID: 33892154263734607}
+  explosion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
+  ships:
+  - {fileID: 2358195761385110564}
+  - {fileID: 2358195761424956381}
+  - {fileID: 2358195761329664362}
+  - {fileID: 2358195760822443190}
+  - {fileID: 2358195761445669139}
+  - {fileID: 2358195761321034438}
+  - {fileID: 2358195760459971269}
+  - {fileID: 2358195759301803733}
+  - {fileID: 2358195760945453699}
+  - {fileID: 2358195760899345904}
+  - {fileID: 2358195760457101845}
+  - {fileID: 2358195760504525316}
+  rigid: {fileID: 936779301}
+  explosionlock: 0
+--- !u!82 &33892154263734607
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152353935805312}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.232
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &104060129934944370
 Transform:
   m_ObjectHideFlags: 0
@@ -8062,6 +8191,7 @@ MonoBehaviour:
   parts: {fileID: 1758755753}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474203348934409}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474203348934408
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8344,6 +8474,7 @@ MonoBehaviour:
   parts: {fileID: 1107786435}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474203643828753}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474203643828752
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8626,6 +8757,7 @@ MonoBehaviour:
   parts: {fileID: 2065638699}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474203662919887}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474203662919886
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8908,6 +9040,7 @@ MonoBehaviour:
   parts: {fileID: 1481372967}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474203683675642}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474203683675641
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9190,6 +9323,7 @@ MonoBehaviour:
   parts: {fileID: 171067182}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474203745407176}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474203745407175
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9472,6 +9606,7 @@ MonoBehaviour:
   parts: {fileID: 719167806}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474203756127004}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474203756127003
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9754,6 +9889,7 @@ MonoBehaviour:
   parts: {fileID: 33442662}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474203896839007}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474203896839006
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10036,6 +10172,7 @@ MonoBehaviour:
   parts: {fileID: 230790893}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474204202986542}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474204202986541
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10318,6 +10455,7 @@ MonoBehaviour:
   parts: {fileID: 1969827104}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474204244245868}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474204244245867
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10600,6 +10738,7 @@ MonoBehaviour:
   parts: {fileID: 2058785891}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474204329374682}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474204329374681
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10882,6 +11021,7 @@ MonoBehaviour:
   parts: {fileID: 1048831424}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474204349502409}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474204349502408
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11164,6 +11304,7 @@ MonoBehaviour:
   parts: {fileID: 483479967}
   explodsion: {fileID: 8300000, guid: af4c1f0056897374ab4e5f9a6fa09653, type: 3}
   audio: {fileID: 4303474204371835673}
+  sprinscript: {fileID: 33892154263734606}
 --- !u!54 &4303474204371835672
 Rigidbody:
   m_ObjectHideFlags: 0

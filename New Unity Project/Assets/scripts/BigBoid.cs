@@ -7,7 +7,7 @@ public class BigBoid : MonoBehaviour
     public Boid boid;
     public BigBoid bigboid;
     public multiCam multicam;
-    private bool spun = false;
+    public bool spun = false;
 
     public bool finished = false;
     public Vector3 velocity;
@@ -121,10 +121,12 @@ public class BigBoid : MonoBehaviour
         path.isLooped = false;
         if (!path.isLooped && path.IsLast())
         {
+
             
             pathFollowingEnabled = false;
             arriveEnabled = true;
-            return Arrive(nextWaypoint);
+            return Vector3.zero;
+            
         }
 
 
@@ -236,22 +238,22 @@ public class BigBoid : MonoBehaviour
         {
             multicam.NormalCam();
         }
-        if(speed < 0.1f)
+        if (spun == false && speed < 0.5 && path.current > 2)
         {
-            if (spun == false)
-            {
-                StartCoroutine("spinning");
-            }
+            spun = true;
+            bigboid.enabled = false;
         }
 
     }
 
     IEnumerator spinning()
     {
+        
+        
+        //transform.rotation = transform.rotation * Quaternion.Euler(300 * Time.deltaTime * 900, 300 * Time.deltaTime * 900, 300 * Time.deltaTime * 900);
+        //transform.Rotate(Vector3.up, Time.deltaTime );
+        yield return new WaitForSeconds(5);
         spun = true;
-        yield return new WaitForSeconds(2);
-        transform.rotation = transform.rotation * Quaternion.Euler(300,300,300 * Time.deltaTime);
-        yield return new WaitForSeconds(3);
         StopCoroutine("spinning");
     }
 
