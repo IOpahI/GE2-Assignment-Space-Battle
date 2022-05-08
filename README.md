@@ -48,9 +48,6 @@ Visual Aspects
 - AI Flocking and pathfinding
 - Switching cameras
 
-# How it works
-
-
 # List of classes/assets with sources
 | Class | Source |
 |-----------|-----------|
