@@ -52,6 +52,24 @@ Visual Aspects
 
 
 # List of classes/assets with sources
+| Class | Source |
+|-----------|-----------|
+| Activator.cs  | Self-written|
+| BigBoid.cs  | Modified from the module git|
+| Boid.cs  | Modified from the module git|
+| Bullet.cs  | Taken from the module git|
+| CamFollow.cs  | Modified from [Source](https://github.com/Jammie506/GameEngines2Project/blob/main/Space%20Battle/Assets/Scripts/cameraController.cs)|
+| Constrain.cs  | Taken from the module git|
+| explode.cs  | Self-written|
+| Flee.cs  | Taken from the module git|
+| multiCam.cs  | Modified from [Source](https://docs.unity3d.com/Manual/MultipleCameras.html)|
+| NoiseWander.cs  | Taken from the module git|
+| ObstacleAvoidance.cs  | Taken from the module git|
+| Path.cs  | Taken from the module git|
+| Pursue.cs  | Taken from the module git|
+| spin.cs  | Self-written|
+| SteeringBehaviour.cs  | Taken from the module git|
+
 
 | Asset | Source |
 |-----------|-----------|
