@@ -8125,7 +8125,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474203348934404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8408,7 +8408,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474203643828748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8691,7 +8691,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474203662919882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8974,7 +8974,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474203683675637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9257,7 +9257,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474203745407171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9540,7 +9540,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474203756126999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9823,7 +9823,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474203896839002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10106,7 +10106,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474204202986537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10389,7 +10389,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474204244245863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10672,7 +10672,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474204329374677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10955,7 +10955,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474204349502404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11238,7 +11238,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &4303474204371835668
 MonoBehaviour:
   m_ObjectHideFlags: 0
